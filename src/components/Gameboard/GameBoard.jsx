@@ -40,7 +40,7 @@ function Gameboard(props) {
     useEffect(() => {
         const intervalo = setInterval(() => {
           setContador((prevContador) => prevContador + 1);
-        }, 30000); // 10000 milisegundos = 10 segundos
+        }, 5000); // 10000 milisegundos = 10 segundos
     
         // Se ejecuta al desmontar el componente o al cambiar de estado
         return () => clearInterval(intervalo);
@@ -72,9 +72,6 @@ function Gameboard(props) {
     useEffect(() => {
         axios.get(`${import.meta.env.VITE_BACKEND_URL}/games/status/${gameId}`)
             .then((response) => {
-
-                console.log("STATUS DEL JUEGO ACTUAL")
-                console.log(response.data)
                 if (response.data.numJugadores===3){
                     setCargando(false)
                 }
@@ -115,8 +112,6 @@ function Gameboard(props) {
                 }
                 //.log("monedassssssss")
                 //.log(datos_monedas)
-                console.log("imprimiendo lista de barcos...")
-                console.log(lista_barcos)
                 setMonedas(datos_monedas)
                 SetBarcos(lista_barcos)
                 setTurno(turno)
@@ -193,7 +188,6 @@ function Gameboard(props) {
                                         }
                                         axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/turn`, data_2)
                                             .then(response => {
-                                                console.log("se cambio de turno!!!")
                                                 console.log(response)
                                             }).catch(error => {
                                                 //.log("mala vola")
@@ -202,7 +196,6 @@ function Gameboard(props) {
 
                                         setTurno(turno+1)
                                     }).catch(error => {
-                                        console.log("HA HABIDO UN ERROR MADRE MIA")
                                         setMensaje("vamos, solo puedes mover tus barcos, intentalo nuevamente")
                                         console.log(error)
                                     })
@@ -230,10 +223,8 @@ function Gameboard(props) {
                                             //.log(response.data.estado);
                                             axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/turn`, data_2)
                                             .then(response => {
-                                                console.log("se cambio de turno!!!")
                                                 console.log(response)
                                             }).catch(error => {
-                                                console.log("mala vola")
                                                 console.log(error)
                                             })
 
@@ -345,10 +336,8 @@ function Gameboard(props) {
                             if (parseInt(jugadorActual.user_Id) === parseInt(idlogueado)){
                                 setAccion("arriba")
                                 setMensaje("elige tu barco a mover")
-                                console.log(`situación actual\njugador en turno: ${turno}\nacción en turno: ${accion}`)
                             }else{
                                 console.log(`el id del usuario que debe jugar es: ${jugadorActual.user_Id}`)
-                                console.log("no es tu turno(2)!!!")
                             }
                             
                         }}>arriba</button>
@@ -357,7 +346,6 @@ function Gameboard(props) {
                             if (parseInt(jugadorActual.user_Id) === parseInt(idlogueado)){
                                 setMensaje("elige tu barco a mover")
                                 setAccion("derecha")
-                                console.log(`situación actual\njugador en turno: ${turno}\nacción en turno: ${accion}`)
                             }else{
                                 console.log("no es tu turno(3)!!")
                             }
@@ -368,7 +356,6 @@ function Gameboard(props) {
                             if (parseInt(jugadorActual.user_Id) === parseInt(idlogueado)){
                                 setMensaje("elige tu barco a mover")
                                 setAccion("izquierda")
-                                console.log(`situación actual\njugador en turno: ${turno}\nacción en turno: ${accion}`)
                             }else{
                                 console.log("no es tu turno(4)!!!")
                             }
@@ -379,7 +366,6 @@ function Gameboard(props) {
                             if (parseInt(jugadorActual.user_Id) === parseInt(idlogueado)){
                                 setMensaje("elige tu barco a mover")
                                 setAccion("abajo")
-                                console.log(`situación actual\njugador en turno: ${turno}\nacción en turno: ${accion}`)
                             }else{
                                 console.log("no es tu turno(5)!")
                             }
@@ -391,7 +377,6 @@ function Gameboard(props) {
 
                             if (parseInt(jugadorActual.user_Id) === parseInt(idlogueado)){
                                 setAccion("pasar")
-                            console.log(`situación actual\njugador en turno: ${turno}\nacción en turno: ${accion}`)
                             const data_pass = {
                                 jugador_Id: jugadorActual.id,
                                 juego_Id: gameId
@@ -431,10 +416,6 @@ function Gameboard(props) {
                             
                             axios.post(`${import.meta.env.VITE_BACKEND_URL}/ships/createship`, data_boat).then(
                                 response => {
-                                    console.log("IMPRIMIENDO BARCO, SE SUPOEN")
-                                    console.log(response)
-                                    console.log('TEST MENSAJE');
-                                    console.log(response.data.estado);
                                     setMensaje(response.data.estado);
                                     axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/turn`, {juego_id: gameId})
                                         .then(response => {
