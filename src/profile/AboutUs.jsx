@@ -1,6 +1,5 @@
 import {useState} from "react"
 import './AboutUs.css';
-import usuario from '../assets/images/usuario.jpg';
 import img_mallku from "../../public/images/imagen_macul.jpg"
 import img_juanca from "../../public/images/imagen_juanca.jpg"
 import Navbar from "../components/NavBar/Navbar";
