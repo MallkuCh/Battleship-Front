@@ -1,8 +1,8 @@
 import react, { useContext, useEffect, useState} from 'react'
-import img_barco_transparente from "../../assets/images/barco_transparente.png"
-import img_barco_transparente_blanco from "../../assets/images/barco_transparente_blanco.png"
-import img_barco_transparente_amarillo from "../../assets/images/barco_transparente_amarillo.png"
-import img_moneda from "../../assets/images/oro_transparente.png"
+import img_barco_transparente from "../../../public/images/img_barco_transparente"
+import img_barco_transparente_blanco from "../../../public/images/barco_transparente_blanco.png"
+import img_barco_transparente_amarillo from "../../../public/images/barco_transparente_amarillo.png"
+import img_moneda from "../../../public/images/oro_transparente.png"
 import axios from 'axios'
 import './GameBoard.css'
 import { AuthContext } from '../../auth/AuthContext';

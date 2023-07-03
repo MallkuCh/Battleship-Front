@@ -1,9 +1,8 @@
 import {useState} from "react"
 import './AboutUs.css';
 import usuario from '../assets/images/usuario.jpg';
-import img_mallku from "../assets/images/imagen_macul.jpg"
-import img_juanca from "../assets/images/imagen_juanca.jpg"
-import img_chatgpt from "../assets/images/chatgp_imagen.png"
+import img_mallku from "../../public/images/imagen_macul.jpg"
+import img_juanca from "../../public/images/imagen_juanca.jpg"
 import Navbar from "../components/NavBar/Navbar";
 
 function AboutUs(){
@@ -45,19 +44,6 @@ function AboutUs(){
                             Horiundo de Arica y con complejo de superioridad.</p>
                         <p class="color-info">mike@example.com</p>
                         <button class="button">Contact</button>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                    <img src={img_chatgpt}/>
-                    <div class="container">
-                        <h2>Chatgpt</h2>
-                        <p class="title">Lenguaje de Modelo</p>
-                        <p class="color-info">Lenguaje de modelo que apoya al equipo en situaciones críticas y además da buen apoyo moral.</p>
-                        <p class="color-info">john@example.com</p>
-                        <button class="button">Incontactable</button>
                     </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background: url("../assets/images/background.png");
+  background: url("../../public/images/background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
