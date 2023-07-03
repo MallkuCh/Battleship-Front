@@ -1,0 +1,133 @@
+
+
+
+
+.App{
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#titulo_LP{
+  font-size: 3vw;
+  width: 100vh;
+  font-family: 'CRAMPS', sans-serif;
+  color: black;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  border-style: double;
+  border-color: black;
+  border-width: 10px;
+
+
+}
+
+#letters_black {
+  color: black;
+  font-size: larger;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.auth-form-container, .login-form, .register-form{
+
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  max-height: 75vh;
+}
+
+.auth-form-container{
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0.25rem;
+  margin: 0.25rem 0.5rem;
+}
+
+input{
+  margin: 0.25rem 0.5rem;
+  padding: 1rem 0.25rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button{
+  margin: 1rem 2rem;
+  border: none;
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.link-btn{
+  background: none;
+  color: black;
+  text-decoration: underline;
+
+}
+
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+

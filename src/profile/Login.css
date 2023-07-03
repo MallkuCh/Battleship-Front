@@ -1,0 +1,29 @@
+.error {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ff4d4d; /* red */
+    border-radius: 5px;
+    color: #ff4d4d; /* red */
+    background-color: #ffe6e6; /* light red */
+    text-align: center;
+  }
+
+.succes {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #5cff4d; /* green */
+    border-radius: 5px;
+    color: #2aff86; /* green */
+    background-color: #e9ffe6; /* light green */
+    text-align: center;
+  }
+
+.logout_button {
+  text-align: center;
+  font-size: 1vw;
+  width: fit-content;
+  margin: auto;
+  padding-left: 1px;
+}

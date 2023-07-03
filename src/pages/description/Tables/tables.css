@@ -1,0 +1,47 @@
+.Card_Tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2px;
+    margin: 0;
+    width: 100vw;
+    background-color: black;
+}
+
+.cardtable {
+    padding: 2em;
+    margin: 10px;
+    background-color: black;
+}
+
+.Titulo {
+    font-family: fantasy;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+
+.Parenttable {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+th,td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+thead th {
+    width:25%;
+}
+
+@media screen and (max-width: 800px) {
+    .Card_Tables {
+    flex-direction: column;
+    }
+}

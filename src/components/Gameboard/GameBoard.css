@@ -1,0 +1,181 @@
+
+
+#gameboard {
+  margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    width: 400px;
+    height: 400px;
+    background: #49ABE3;
+}
+
+.board-enemies{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.board-enemies .enemigos .enemigo{
+  align-items: center;
+  text-align: center;
+  height: 20vh;
+  
+}
+
+.board-enemies .enemigos .titulo-enemigo{
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  height: 5vh;
+  font-family: 'CRAMPS', sans-serif  ;
+  color: white;
+}
+
+.board-enemies .enemigos .separacion{
+  height:3vh ;
+  background: black;
+}
+.board-enemies .enemigos .enemigo p{
+  color: white;
+  font-size: medium;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size:medium;
+}
+
+#gameboard .cuadro {
+    width: 50px;
+    height: 50px;
+    border: black 1px solid
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.cuadro-barco{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: transparent;
+
+}
+
+.cuadro-moneda{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+
+}
+.cuadro-barco  img{
+  width: 150%;
+  max-height: 100%;
+  background-color: transparent;
+}
+
+.cuadro-moneda  img{
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.turno{
+  background: white;
+}
+
+.control-center {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  height: 40vh;
+  background-color: black;
+  border: black 1px solid;
+  text-align: center;
+}
+
+#board{
+  display: flex;
+  flex-direction: row;
+  border: black 2px solid;
+}
+
+.enemigos{
+  margin-top: 20px;
+  height: 400px;
+  width: 25vh;
+  background-color: rgb(101, 99, 99);
+  border: black 2px solid ;
+  align-items: center;
+}
+
+
+
+.cuadro-control {
+  font-family: 'CRAMPS', sans-serif ;
+  width: 25vw;
+  height: 40vh;
+  color: white;
+  
+
+}
+
+.acciones {
+  grid-template-columns:auto ;
+  width: 25vw;
+
+}
+
+.acciones button{
+  width: 55px;
+  height: 25px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.resumen{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 25vw;
+  align-items: center;
+}
+
+.resumen .info{
+  width: 30vw;
+  height: 5vh;
+  text-align: center;
+
+}
+
+.resumen .info p{
+  font-size: small;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.contenedor{
+  width: 75vw;
+  align-items: center;
+}

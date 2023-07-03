@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.titulos{
+    display: flex;
+    margin-top: 4px ;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 3px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 10vh;
+    border: black 2px solid;
+    background: rgb(98, 98, 98);
+
+}
+.partida-disponible{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 10vh;
+    border: black 2px solid;
+    color: black;
+    font-family: fantasy;
+}
+
+.titulos .identificador-titulo{
+    width: 20vw;
+    text-align: center;
+    border-right: 2px solid black;
+    height: inherit;
+    text-align: center;
+}
+
+.titulos .jugadores-titulo{
+    width: 20vw;
+    text-align: center;
+    border-right: 2px solid black;
+    height: inherit;
+    text-align: center;
+}
+.titulos .enter-titulo{
+    width: 20vw;
+    text-align: center;
+    height: inherit;
+    text-align: center;
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+
+.partida-disponible .identificador{
+    width: 20vw;
+
+    text-align: center;
+}
+
+.partida-disponible .jugadores{
+    width: 20vw;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.partida-disponible .enter{
+    width: 20vw;
+
+    text-align: center;
+}
+
+ .enter button{
+    width: 40px;
+    height: 20px;
+    font-size: 0.6rem;
+    border-radius: 7.5px;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    height: 7.5vh;
+}
+
+.recargar, .crear{
+    height: 5vh;
+}
+.recargar button {
+    width: 7.5vw;
+    height: 4vh;
+    font-size: 10px;
+}
+
+.crear button {
+    width: 7.5vw;
+    height: 4vh;
+    font-size: 10px;
+}
+
+
+.titulo_LP {
+    font-size: 3vw;
+    width: 75vh;
+    font-family: 'CRAMPS', sans-serif;
+    color: black;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    border-style: double;
+    border-color: black;
+    border-width: 10px;
+    display: flex;
+    justify-content: center;
+}

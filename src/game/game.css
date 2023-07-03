@@ -1,0 +1,43 @@
+#control-center {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 30vh;
+    background-color: black;
+    border: black 1px solid;
+    text-align: center;
+}
+
+#board{
+    display: flex;
+    flex-direction: row;
+    border: black 2px solid;
+}
+
+
+
+
+
+
+
+.acciones {
+    grid-template-columns:auto ;
+}
+
+
+
+.resumen{
+    display: flex;
+    flex-direction: column;
+}
+
+.resumen .info{
+    width: 30vw;
+    height: 10vh;
+    text-align: center;
+}
+
+.resumen .info p{
+    font-size: small;
+    color: white;
+}
